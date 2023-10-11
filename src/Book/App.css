@@ -928,10 +928,16 @@ Link{
     justify-content: flex-start;
     align-items: flex-start;
 }
+
 .new_left{
-    width: 35%;  
+    width: 30%;  
     padding:3.9em 0em 2em 0.5em; 
     box-sizing: border-box; 
+}
+.slider_bar{
+    width: 100%;
+    padding: 0 1.5em 0 1.5em;
+    box-sizing: border-box;
 }
 
 .Filter_heading{
@@ -973,11 +979,13 @@ Link{
     cursor: pointer;
 }
 .checkbox_div{
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 .checkbox{
+    width: 100%;
     padding: 0 0 0 0.3em;
     box-sizing: border-box;
 }
@@ -1004,12 +1012,13 @@ Link{
     box-sizing: border-box;
 }
 .new_right{
-    width: 65%;
+    width: 70%;
     height: fit-content;
-    margin: 0px 0 2em 0.5em;
+    margin: 0 0 2em 0.5em;
     box-sizing: border-box;  
 }
 .new_right1{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -1028,6 +1037,7 @@ Link{
 }
 .new_right2{
     height: 87vh;
+    width: 100%;
     overflow-x: hidden;
     overflow-y: scroll;
     display: grid;
@@ -1078,6 +1088,7 @@ Link{
 
 .new_right2a{
     height: fit-content;
+    width: 100%;
     padding: 1em 0 1em 1em;
     display: flex;
     flex-direction: row;
@@ -1113,7 +1124,38 @@ Link{
 
 }
 
-
+@media(max-width:360px){
+    .new_left{
+        padding-top: 3.1em;
+        box-sizing: border-box;
+    }
+    .Filter_heading{
+        font-size: 0.9em;
+    }
+    .Price_range{
+        font-size: 0.9em;
+    }
+    .slider_bar{
+        padding: 0 0.8em 0 0.8em;
+        box-sizing: border-box;
+    }
+    .checkbox_span_title{
+        font-size: 0.9em;
+    }
+    
+    .new_right1 span{
+        font-size: 0.9em;
+    }
+    
+    .new_right2a{
+        padding: 0.7em 0 0.7em 0.2em;
+        box-sizing: border-box;
+    }
+    .img{
+        width: 4.5em;
+        height: 7.2em;
+    }
+}
 
 @media(min-width:768px){
     .new_arr{

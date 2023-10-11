@@ -6,7 +6,6 @@ import { Appcontext } from '../ContextPovider/Appcontext';
 
 
 
-
 const SharedBooks = () => {
     
 //*********************************************Common storage*******************************
@@ -335,11 +334,11 @@ const SharedBooks = () => {
     return(
         <>
             <div className="new_arr">    
-                <div className="common_new">
-                    <div className="new_left">
+              <div className="common_new">
+                <div className="new_left">
                         <h2 className='Filter_heading'>Refine your search</h2><hr className='refine_search_hr'/>
                             <h3 className='Price_range'>Price Range:<span className="price_range_left">&#8377;{0} - </span><span className="price_range_left">&#8377;{val}</span></h3>
-                            <div style={{padding:'0 1.5em 0 1.5em',boxSizing:'border-box'}}><input 
+                            <div className='slider_bar'><input 
                                 type="range"
                                 className ="range"
                                 name ="range"
@@ -437,7 +436,7 @@ const SharedBooks = () => {
                             </div>
                         </div>
                         <hr className='refine_search_hr'/>
-                    </div>                     
+                    </div>                 
                     <Outlet/>
                 </div>
             </div>
